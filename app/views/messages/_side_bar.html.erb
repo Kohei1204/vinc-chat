@@ -1,9 +1,8 @@
 <div class="side-top">
   <div class="user-name">
-   <%= link_to current_user.name %>
+   <%= link_to current_user.name, edit_user_path(current_user) %>
   </div>
 
-  <%# , edit_user_path(current_user) %>
 
   <div class="new-chat">
   <a href="#">make a chat</a>
