@@ -3,18 +3,21 @@
    <%= link_to current_user.name, edit_user_path(current_user) %>
   </div>
 
-
   <div class="new-chat">
-  <a href="#">make a chat</a>
+  <%= link_to "Make a chat", new_room_path %>
   </div>
 
 </div>
 
 <div class="side-tables">
   <div class="side-table">
-    <div class="room-name">
-      <a href="#">room1</a>
+    <% current_user.rooms.each do |room| %>
+    <div class="room">
+      <div class="room-name">
+        <a href="#"><%= room.name %></a>
+      </div>
     </div>
+  <% end %>
   </div>
   <div class="side-table">
     <div class="room-name">
