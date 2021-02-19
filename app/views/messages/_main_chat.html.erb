@@ -10,39 +10,7 @@
 </div>
 
 <div class="main-messages">
-<%# *********ここで一つのコメント************ %>
-  <div class="message">
-    <div class="chat-content">
-        <div class="main-user-name">
-          Name
-        </div>
-        <div class="chat-time">
-        time
-        </div>
-    </div>
-
-    <div class="chat-text">
-    hello world
-    </div>
-  </div>
-<%# ****************************************** %>
-
-<%# *********ここで一つのコメント************ %>
-  <div class="message">
-    <div class="chat-content">
-        <div class="main-user-name">
-          Tom
-        </div>
-        <div class="chat-time">
-        2020/2/11(Thu)14:00
-        </div>
-    </div>
-
-    <div class="chat-text">
-    hello world
-    </div>
-  </div>
-<%# ****************************************** %>
+  <%= render partial: 'message', collection: @messages %>
 </div>
 
 <%# <div class="form">
