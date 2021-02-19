@@ -1,10 +1,14 @@
 <div class="main-top">
-  <div class="room-detail">
-    <%= @room.name %>
+  <div class="left-header">
+    <div class="room-detail">
+      <%= @room.name %>
+    </div>
   </div>
 
-  <div class="end-button">
-  <a href="#">Exit the room</a>
+  <div class="right-header">
+      <div class="end-button">
+        <%= link_to "Exit the room", room_path(@room), method: :delete %>
+      </div>
   </div>
 
 </div>
