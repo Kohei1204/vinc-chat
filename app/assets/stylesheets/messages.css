@@ -39,6 +39,7 @@
         background-color: #fAfAfA;
         height: calc(100vh - 100px - 90px);
         padding-top: 40px;
+        overflow: scroll;
       }
         .message{
           margin-bottom: 40px;
@@ -160,7 +161,13 @@
         padding: 20px 0px 40px;
       }
 
+      .room-name{
+        margin-top: 40px;
+        font-family: 'Caveat', cursive;
+        font-size: 20px;
+      }
       .room-name a {
+        padding-top: 20px;
         text-decoration: none;
         color: white;
       }
