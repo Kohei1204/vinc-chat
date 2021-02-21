@@ -1,6 +1,7 @@
 class RoomsController < ApplicationController
 
   def index
+    # @rooms = Room.includes(:messages).order("created_at DECS")
   end
 
   def new
